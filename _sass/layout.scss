@@ -1,0 +1,70 @@
+html {
+  background-color: $background-color;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  /* animation: glowing 3s infinite; */
+}
+
+nav {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-auto-flow: column;
+  grid-column-gap: 24px;
+  
+  a {
+    font-size: 24px;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    :hover {
+      color: yellow;
+    }
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  iframe {
+    padding: 10px;
+  }
+}
+
+.random-thoughts {
+  padding: 20px;
+  > * {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+
+.mono {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
