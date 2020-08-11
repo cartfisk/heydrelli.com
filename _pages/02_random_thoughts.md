@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RANDOM THOUGHTs
-permalink: /random-thoughts/
+permalink: random-thoughts/
 ---
 <div class="random-thoughts">
     <p class="mono center">
