@@ -1,6 +1,8 @@
 *, *::before, *::after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 @font-face { font-family: 'Helvetica_Condensed_Black'; src: url("../font/Helvetica_Condensed_Black.woff2"); }
+@font-face { font-family: 'University of Nowhere Outline'; src: url("../font/University_of_Nowhere-Outline.ttf"); }
+@font-face { font-family: 'Paladins Outline'; src: url("../font/PaladinsOutline.otf"); }
 * { font-family: "Helvetica_Condensed_Black", Helvetica Condensed Black, Helvetica Condensed, Arial, Helvetica Neue, Helvetica, sans-serif; color: #eeeeee; }
 
 html { background-color: #f0581f; }
@@ -9,11 +11,18 @@ html { background-color: #f0581f; }
 
 .logo { max-width: 100%; padding-left: 5vw; padding-right: 5vw; /* animation: glowing 3s infinite; */ }
 
-nav { display: grid; align-items: center; justify-content: center; grid-auto-flow: column; grid-column-gap: 24px; }
-nav a { font-size: 24px; text-decoration: none; text-shadow: 2px 2px black; }
-nav a :hover { color: yellow; }
+@keyframes glowing { 0% { text-shadow: 0 0 0px #ffc164; }
+  50% { text-shadow: 0 0 25px #ffc164; }
+  100% { text-shadow: 0 0 0px #ffc164; } }
+.header-font { font-family: "Paladins Outline", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #eeeeee; text-align: center; font-size: 15vw; letter-spacing: 15px; margin: 10px; animation: glowing 1.5s infinite; }
 
-.title { display: flex; align-items: center; justify-content: center; }
+.identity { display: flex; align-items: center; justify-content: center; padding: 20px; }
+.identity i { padding: 5px; transition: 0.15s ease-in-out; }
+.identity i:hover { text-shadow: 0 0 25px #ffc164; }
+
+nav { display: grid; align-items: center; justify-content: center; grid-auto-flow: column; grid-column-gap: 24px; }
+nav a { font-size: 36px; text-decoration: none; -webkit-text-stroke: 2px #8f5410; transition: 0.15s ease-in-out; }
+nav a:hover { text-shadow: 0 0 25px #ffc164; }
 
 .videos { width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; }
 .videos iframe { padding: 10px; }
