@@ -6,6 +6,8 @@
 @font-face { font-family: 'Paladins Gradient'; src: url("../font/PaladinsGradient.otf"); }
 * { font-family: "Helvetica_Condensed_Black", Helvetica Condensed Black, Helvetica Condensed, Arial, Helvetica Neue, Helvetica, sans-serif; color: #eeeeee; }
 
+body { max-width: 900px; margin: 0 auto; padding: 0 50px; float: none; }
+
 html { background-color: #f0581f; }
 
 .center { display: flex; justify-content: center; }
@@ -15,14 +17,14 @@ html { background-color: #f0581f; }
 @keyframes glowing { 0% { text-shadow: 0 0 0px #ffc164; }
   50% { text-shadow: 0 0 25px #ffc164; }
   100% { text-shadow: 0 0 0px #ffc164; } }
-.header-font { font-family: "Paladins Outline", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; color: #eeeeee; text-align: center; font-size: 15vw; margin: 10px; animation: glowing 1.5s infinite; }
+.header-font { font-family: "Paladins Outline", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; color: #eeeeee; text-align: center; font-size: 8vw; margin: 10px; animation: glowing 1.5s infinite; }
 
 nav { display: grid; align-items: center; justify-content: center; grid-auto-flow: column; grid-column-gap: 2vw; }
-nav a { font-size: 3.5vw; text-decoration: none; text-shadow: 2px 2px black; transition: 0.15s ease-in-out; }
+nav a { font-size: 3vw; text-decoration: none; text-shadow: 2px 2px black; transition: 0.15s ease-in-out; }
 nav a:hover { text-shadow: 0 0 25px #ffc164; }
 
 .identity { display: flex; align-items: center; justify-content: center; padding: 20px; }
-.identity i { font-size: 8vw; padding: 5px; transition: 0.15s ease-in-out; }
+.identity i { font-size: 5vw; padding: 5px; transition: 0.15s ease-in-out; }
 .identity i:hover { text-shadow: 0 0 25px #ffc164; }
 
 .videos { width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; }
