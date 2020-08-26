@@ -46,3 +46,10 @@ $background-color: #f0581f;
   font-family: $kanye;
   color: #eeeeee;
 }
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 50px;
+  float: none;
+}

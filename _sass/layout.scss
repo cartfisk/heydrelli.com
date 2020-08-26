@@ -29,7 +29,7 @@ html {
   font-family: $paladins;
   color: #eeeeee;
   text-align: center;
-  font-size: 15vw;
+  font-size: 8vw;
   margin: 10px;
   animation: glowing 1.5s infinite;
 }
@@ -41,7 +41,7 @@ nav {
   grid-auto-flow: column;
   grid-column-gap: 2vw;
   a {
-    font-size: 3.5vw;
+    font-size: 3vw;
     text-decoration: none;
     text-shadow: 2px 2px black;
     transition: 0.15s ease-in-out;
@@ -57,7 +57,7 @@ nav {
   justify-content: center;
   padding: 20px;
   i {
-    font-size: 8vw;
+    font-size: 5vw;
     padding: 5px;
     transition: 0.15s ease-in-out;
     &:hover {
