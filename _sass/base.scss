@@ -23,6 +23,16 @@ $background-color: #f0581f;
   src: url('../font/Helvetica_Condensed_Black.woff2');
 }
 
+@font-face {
+  font-family: 'University of Nowhere Outline';
+  src: url('../font/University_of_Nowhere-Outline.ttf');
+}
+
+@font-face {
+  font-family: 'Paladins Outline';
+  src: url('../font/PaladinsOutline.otf');
+}
+
 * {
   font-family: "Helvetica_Condensed_Black", Helvetica Condensed Black, Helvetica Condensed, Arial, Helvetica Neue, Helvetica, sans-serif;
   color: #eeeeee;
