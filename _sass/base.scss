@@ -1,6 +1,10 @@
 $content-width: 800px;
 $main: #19ccaa;
 $font-style: 'Open Sans', sans-serif;
+$paladins: 'Paladins Outline', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$paladins2: 'Paladins Gradient', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$kanye: "Helvetica_Condensed_Black", Helvetica Condensed Black, Helvetica Condensed, Arial, Helvetica Neue, Helvetica, sans-serif;
+$hover-glow: 0 0 25px #ffc164;
 $font-color: #262626;
 $link-color: #425469;
 $link-hover-color: $main;
@@ -33,7 +37,12 @@ $background-color: #f0581f;
   src: url('../font/PaladinsOutline.otf');
 }
 
+@font-face {
+  font-family: 'Paladins Gradient';
+  src: url('../font/PaladinsGradient.otf');
+}
+
 * {
-  font-family: "Helvetica_Condensed_Black", Helvetica Condensed Black, Helvetica Condensed, Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-family: $kanye;
   color: #eeeeee;
 }
