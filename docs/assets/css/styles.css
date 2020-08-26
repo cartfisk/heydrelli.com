@@ -3,26 +3,27 @@
 @font-face { font-family: 'Helvetica_Condensed_Black'; src: url("../font/Helvetica_Condensed_Black.woff2"); }
 @font-face { font-family: 'University of Nowhere Outline'; src: url("../font/University_of_Nowhere-Outline.ttf"); }
 @font-face { font-family: 'Paladins Outline'; src: url("../font/PaladinsOutline.otf"); }
+@font-face { font-family: 'Paladins Gradient'; src: url("../font/PaladinsGradient.otf"); }
 * { font-family: "Helvetica_Condensed_Black", Helvetica Condensed Black, Helvetica Condensed, Arial, Helvetica Neue, Helvetica, sans-serif; color: #eeeeee; }
 
 html { background-color: #f0581f; }
 
 .center { display: flex; justify-content: center; }
 
-.logo { max-width: 100%; padding-left: 5vw; padding-right: 5vw; /* animation: glowing 3s infinite; */ }
+.logo { max-width: 100%; padding-left: 5vw; padding-right: 5vw; }
 
 @keyframes glowing { 0% { text-shadow: 0 0 0px #ffc164; }
   50% { text-shadow: 0 0 25px #ffc164; }
   100% { text-shadow: 0 0 0px #ffc164; } }
-.header-font { font-family: "Paladins Outline", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #eeeeee; text-align: center; font-size: 15vw; letter-spacing: 15px; margin: 10px; animation: glowing 1.5s infinite; }
+.header-font { font-family: "Paladins Outline", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; color: #eeeeee; text-align: center; font-size: 15vw; margin: 10px; animation: glowing 1.5s infinite; }
+
+nav { display: grid; align-items: center; justify-content: center; grid-auto-flow: column; grid-column-gap: 2vw; }
+nav a { font-size: 3.5vw; text-decoration: none; text-shadow: 2px 2px black; transition: 0.15s ease-in-out; }
+nav a:hover { text-shadow: 0 0 25px #ffc164; }
 
 .identity { display: flex; align-items: center; justify-content: center; padding: 20px; }
-.identity i { padding: 5px; transition: 0.15s ease-in-out; }
+.identity i { font-size: 8vw; padding: 5px; transition: 0.15s ease-in-out; }
 .identity i:hover { text-shadow: 0 0 25px #ffc164; }
-
-nav { display: grid; align-items: center; justify-content: center; grid-auto-flow: column; grid-column-gap: 24px; }
-nav a { font-size: 36px; text-decoration: none; -webkit-text-stroke: 2px #8f5410; transition: 0.15s ease-in-out; }
-nav a:hover { text-shadow: 0 0 25px #ffc164; }
 
 .videos { width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; }
 .videos iframe { padding: 10px; }
@@ -30,6 +31,42 @@ nav a:hover { text-shadow: 0 0 25px #ffc164; }
 .random-thoughts { padding: 20px; }
 .random-thoughts > * { text-align: center; font-size: 24px; }
 
+.photos { display: flex; flex-direction: column; background-image: url("../img/image-4.jpg"); background-size: contain; }
+.photos img { align-self: center; }
+
 .mono { font-family: 'Courier New', Courier, monospace; }
 
 footer { position: fixed; bottom: 0; display: flex; align-items: center; text-align: center; padding: 40px; }
+
+/*=== progressBar CSS By David Porras ===*/
+.header-appear { opacity: 0; animation: appear 1s ease 2.5s normal forwards; }
+
+.loading-bar { display: flex; flex-direction: column; justify-content: center; align-items: center; align-self: center; padding: 100px 200px 100px 200px; }
+.loading-bar .loading-text { font-size: 4vw; font-family: "Helvetica_Condensed_Black", Helvetica Condensed Black, Helvetica Condensed, Arial, Helvetica Neue, Helvetica, sans-serif; -webkit-text-stroke: 2px #8f5410; text-transform: uppercase; margin: 0; animation: disappear 1s ease 2.3s normal forwards; }
+.loading-bar .progress { animation: disappear 1s ease 2.3s normal forwards; }
+.loading-bar .enter-button { font-family: "Paladins Gradient", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; font-size: 5vw; border: 2px solid rgba(255, 215, 128, 0); border-radius: 15px; margin: 10px; padding: 15px 34px 15px 15px; text-decoration: none; background-color: #ffb444; opacity: 0; animation: appear 1s ease 2.5s normal forwards; transition: 0.15s ease-in-out; }
+.loading-bar .enter-button:hover { box-shadow: 0 0 25px #ffc164; border: 2px solid #ffd780; }
+
+@keyframes appear { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+@keyframes disappear { 0% { opacity: 1; }
+  100% { opacity: 0; } }
+.progress { background-color: #e5e9eb; height: 1em; position: relative; width: 100%; }
+
+.progress-bar-orange { background-size: 23em 0.25em; height: 100%; position: relative; background-color: #fb8836; animation-iteration-count: 1; animation: cssload-width 2s cubic-bezier(0.45, 0, 1, 1) normal forwards; -o-animation: cssload-width 2s cubic-bezier(0.45, 0, 1, 1) normal forwards; -ms-animation: cssload-width 2s cubic-bezier(0.45, 0, 1, 1) normal forwards; -webkit-animation: cssload-width 2s cubic-bezier(0.45, 0, 1, 1) normal forwards; -moz-animation: cssload-width 2s cubic-bezier(0.45, 0, 1, 1) normal forwards; }
+
+@keyframes cssload-width { 0%, 100% { transition-timing-function: cubic-bezier(1, 0, 0.65, 0.85); }
+  0% { width: 0; }
+  100% { width: 100%; } }
+@-o-keyframes cssload-width { 0%, 100% { -o-transition-timing-function: cubic-bezier(1, 0, 0.65, 0.85); }
+  0% { width: 0; }
+  100% { width: 100%; } }
+@-ms-keyframes cssload-width { 0%, 100% { -ms-transition-timing-function: cubic-bezier(1, 0, 0.65, 0.85); }
+  0% { width: 0; }
+  100% { width: 100%; } }
+@-webkit-keyframes cssload-width { 0%, 100% { -webkit-transition-timing-function: cubic-bezier(1, 0, 0.65, 0.85); }
+  0% { width: 0; }
+  100% { width: 100%; } }
+@-moz-keyframes cssload-width { 0%, 100% { -moz-transition-timing-function: cubic-bezier(1, 0, 0.65, 0.85); }
+  0% { width: 0; }
+  100% { width: 100%; } }
